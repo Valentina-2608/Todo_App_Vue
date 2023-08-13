@@ -1,0 +1,24 @@
+#app{
+    width:1200px;
+    height:1200px;
+    background: rgb(81,124,214);
+    background: linear-gradient(16deg, rgba(81,124,214,1) 0%, rgba(255,255,255,1) 100%); 
+    position:relative;  
+    margin:0 auto;
+}
+
+
+.block_app{
+    width:1200px;
+    height:1200px;
+    position:absolute;
+    text-align: center;
+   
+}
+
+.caption{
+    color:darkred;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size:42px;
+}
