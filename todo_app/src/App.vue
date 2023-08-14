@@ -1,17 +1,37 @@
 <template>
   <div id="app">
-   <Todos/>
+    <ToDos v-bind:todoEntries="todoEntries"/>
   </div>
 </template>
 
 <script>
 
-import Todos from './components/Todos.vue'
+import ToDos from './components/ToDos.vue'
 
 export default {
   name: 'App',
   components: {
-    Todos
+    ToDos
+  },
+  data(){
+    return {
+      todoEntries: [
+        {id:1,
+        title:'Go shopping',
+        completed:false
+        },
+        {id:2,
+        title:'Clean flat',
+        completed:false
+        },
+        {id:3,
+        title:'Wash up',
+        completed:false
+        }
+
+      ]
+
+    }
   }
 }
 </script>
