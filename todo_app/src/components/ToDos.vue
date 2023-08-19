@@ -1,14 +1,16 @@
 <template>
   <div class="block_app">
       <div class="caption">Vue Todo App</div>
-      <ul>
-          <li v-bind:key="item.id" v-for="item in todoEntries">
-              <ToDoItem v-bind:todoItem="item" />
-          </li>   
-      </ul>
-      
-  </div>
-   
+      <div class="tasks">
+          <div v-bind:key="item.id" v-for="item in todoEntries" class="todo_item">
+          <div class="todo_title">
+            <ToDoItem v-bind:todoItem="item" />
+          </div>
+            <button class="delete_todo">Delete todo</button>
+            <button class="check_todo">Check todo</button>
+          </div>   
+      </div>
+</div>
 </template>
 
 <script>
