@@ -22,3 +22,67 @@
     font-weight: bold;
     font-size:42px;
 }
+
+
+
+.tasks{
+    width:1200px;
+    height:900px;
+    position:absolute;
+    top:320px;
+    left:0px;
+}
+
+
+.todo_item{
+    width:800px;
+    height:80px;
+    margin-top: 10px;
+    margin-left:200px;
+}
+
+.delete_todo{
+    font-size:18px;
+    background-color:red;
+    padding:12px;
+    border-radius: 10px;
+    float:left;
+    margin-top:32px;
+    border:none;
+    margin-left:20px;
+    color:white;
+}
+
+.check_todo{
+    font-size:18px;
+    background-color:green;
+    padding:12px;
+    border-radius: 10px;
+    float:left;
+    margin-top:32px;
+    border:none;
+    margin-left:20px;
+    color:white;
+}
+
+
+.todo_title{
+    width:400px;
+    text-align: left;
+    font-size:24px;
+    background-color:white;
+    margin-top:30px;
+    padding:12px;
+    border-radius: 10px;
+    float:left;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.delete_todo:hover{
+    cursor: pointer;
+}
+
+
+.check_todo:hover{
+    cursor: pointer;
+}
